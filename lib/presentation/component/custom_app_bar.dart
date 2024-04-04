@@ -13,6 +13,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
+      scrolledUnderElevation: 0,
       elevation: 0,
       floating: true,
       title: SizedBox(
