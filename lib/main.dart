@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       title: 'Youtube Ui Clone',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color(0xff0f0f0f),
-          primary: Color(0xff0f0f0f),
-          secondary: Color(0xfff1f1f1),
+          seedColor: const Color(0xff0f0f0f),
+          primary: const Color(0xff0f0f0f),
+          secondary: const Color(0xfff1f1f1),
         ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(color: Color(0xfff1f1f1))

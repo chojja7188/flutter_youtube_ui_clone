@@ -19,14 +19,14 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: Container(
         color: Config.bgColor,
-        child: CustomScrollView(
+        child: const CustomScrollView(
           slivers: [
             CustomAppBar(),
             HomeTab(),
           ],
         ),
       ),
-      bottomNavigationBar: CustomBottomNavigationBar()
+      bottomNavigationBar: const CustomBottomNavigationBar()
     );
   }
 }

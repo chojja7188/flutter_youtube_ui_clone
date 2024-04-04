@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_youtube_ui_clone/config.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
-  const CustomBottomNavigationBar({Key? key}) : super(key: key);
+  const CustomBottomNavigationBar({super.key});
 
   @override
   State<CustomBottomNavigationBar> createState() =>
@@ -24,7 +24,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           _bottomButton(text: 'Shorts', iconData: Icons.slow_motion_video_outlined),
           IconButton(
               onPressed: () {},
-              icon: Icon(Icons.add_circle_outline_rounded, size: 35, color: Config.fontColor,)
+              icon: const Icon(Icons.add_circle_outline_rounded, size: 35, color: Config.fontColor,)
           ),
           _bottomButton(text: '구독', iconData: Icons.subscriptions_outlined),
           InkWell(
@@ -38,7 +38,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                               width: 24,
                               height: 24,
                               child: Image.network('https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjRfMjY1/MDAxNDg3OTI2NDcyNTc2.IYRdVib5YjSTBwEdn8CwDSPfmci95mdrTBdKHYYGn9Eg.aXZlXjQplS9Tk8WOdONlJAve8x5wPzwMBqG-xWM_g1sg.JPEG.citymedia1/2017-02-24_17-50-41.jpg?type=w800', fit: BoxFit.cover,))),
-                      Text('나',
+                      const Text('나',
                           style: TextStyle(
                               fontSize: 9,
                               color: Color(0xfff1f1f1))
@@ -62,10 +62,10 @@ Widget _bottomButton({required String text, required IconData iconData}) {
           children: [
             Icon(
               iconData,
-              color: Color(0xfff1f1f1),
+              color: const Color(0xfff1f1f1),
             ),
             Text(text,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 9,
                     color: Color(0xfff1f1f1))
             )

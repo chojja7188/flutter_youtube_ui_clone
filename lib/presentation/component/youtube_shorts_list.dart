@@ -3,13 +3,13 @@ import 'package:flutter_youtube_ui_clone/config.dart';
 import 'package:flutter_youtube_ui_clone/presentation/component/youtube_shorts_card.dart';
 
 class YoutubeShortsList extends StatelessWidget {
-  const YoutubeShortsList({Key? key}) : super(key: key);
+  const YoutubeShortsList({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       color: Config.bgColor,
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -17,7 +17,7 @@ class YoutubeShortsList extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: SizedBox(
                   child: Image.asset('assets/image/shorts_logo.png'))),
-          SingleChildScrollView(
+          const SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [

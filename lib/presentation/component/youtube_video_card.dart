@@ -6,7 +6,7 @@ import 'package:intl/intl.dart';
 class YoutubeVideoCard extends StatefulWidget {
   final String title;
   final String url;
-  const YoutubeVideoCard({Key? key, required this.title, required this.url}) : super(key: key);
+  const YoutubeVideoCard({super.key, required this.title, required this.url});
 
   @override
   State<YoutubeVideoCard> createState() => _YoutubeVideoCardState();
@@ -42,18 +42,18 @@ class _YoutubeVideoCardState extends State<YoutubeVideoCard> {
                     child: Opacity(
                       opacity: 0.8,
                       child: Container(
-                        padding: EdgeInsets.only(left: 4, right: 4),
+                        padding: const EdgeInsets.only(left: 4, right: 4),
                         decoration: BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(4)
                         ),
-                        child: Text(_formattedTime, style: TextStyle(fontSize: 13),),
+                        child: Text(_formattedTime, style: const TextStyle(fontSize: 13),),
                       ),
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 4),
+              const SizedBox(height: 4),
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(8),
@@ -69,7 +69,7 @@ class _YoutubeVideoCardState extends State<YoutubeVideoCard> {
                                 height:30,
                                 child: Image.network('https://yt3.ggpht.com/kK9lUSB5vd1XJGL6Bvl1t_9JlNy6AY0xypKr0G1gilwuYm7O8pI7K8CdujXmdh1yCmurA86qd5Q=s68-c-k-c0x00ffffff-no-rj'))
                         ),
-                        SizedBox(width: 12),
+                        const SizedBox(width: 12),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -78,8 +78,8 @@ class _YoutubeVideoCardState extends State<YoutubeVideoCard> {
                               child: Text(widget.title,
                                   overflow: TextOverflow.ellipsis, maxLines: 2, softWrap: true),
                             ),
-                            SizedBox(height: 4),
-                            Row(
+                            const SizedBox(height: 4),
+                            const Row(
                               children: [
                                 Text('올끌 (All of MBClassic) · 조회수 23만회 · 3개월 전', style: TextStyle(color: Colors.grey, fontSize: 12),)
                               ],
@@ -88,12 +88,12 @@ class _YoutubeVideoCardState extends State<YoutubeVideoCard> {
                         )
                       ],
                     ),
-                    Expanded(child: Spacer()),
-                    Icon(Icons.more_vert, color: Config.fontColor, size: 20)
+                    const Expanded(child: Spacer()),
+                    const Icon(Icons.more_vert, color: Config.fontColor, size: 20)
                   ],
                 ),
               ),
-              SizedBox(height: 20)
+              const SizedBox(height: 20)
             ],
           ),
         ),
@@ -104,7 +104,7 @@ class _YoutubeVideoCardState extends State<YoutubeVideoCard> {
             child: SliderTheme(
               data: SliderThemeData(
                 trackShape: CustomTrackShape(),
-                thumbShape: RoundSliderThumbShape(enabledThumbRadius: 5),
+                thumbShape: const RoundSliderThumbShape(enabledThumbRadius: 5),
                 trackHeight: 1,
               ),
               child: Slider(

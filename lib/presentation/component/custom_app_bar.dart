@@ -3,7 +3,7 @@ import 'package:flutter_youtube_ui_clone/presentation/component/category_list.da
 import 'package:flutter_youtube_ui_clone/repository/category_repository.dart';
 
 class CustomAppBar extends StatefulWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
+  const CustomAppBar({super.key});
 
   @override
   State<CustomAppBar> createState() => _CustomAppBarState();
@@ -22,13 +22,13 @@ class _CustomAppBarState extends State<CustomAppBar> {
       ),
       backgroundColor: Theme.of(context).colorScheme.primary,
       actions: [
-        IconButton(icon: Icon(Icons.cast, color: Color(0xfff1f1f1), size: 22), onPressed: () {}),
-        IconButton(icon: Icon(Icons.notifications_none, color: Color(0xfff1f1f1), size: 22), onPressed: () {}),
-        IconButton(icon: Icon(Icons.search, color: Color(0xfff1f1f1), size: 22), onPressed: () {})
+        IconButton(icon: const Icon(Icons.cast, color: Color(0xfff1f1f1), size: 22), onPressed: () {}),
+        IconButton(icon: const Icon(Icons.notifications_none, color: Color(0xfff1f1f1), size: 22), onPressed: () {}),
+        IconButton(icon: const Icon(Icons.search, color: Color(0xfff1f1f1), size: 22), onPressed: () {})
       ],
       bottom: PreferredSize(
         child: CategoryList(repository: CategoryRepository()),
-        preferredSize: Size(30, 30),
+        preferredSize: const Size(30, 30),
       ),
     );
   }

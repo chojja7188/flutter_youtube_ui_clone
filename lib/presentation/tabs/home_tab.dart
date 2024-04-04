@@ -15,7 +15,7 @@ class _HomeTabState extends State<HomeTab> {
   Widget build(BuildContext context) {
     return SliverList(
         delegate: SliverChildBuilderDelegate(childCount: 8, (BuildContext context, int index) {
-          return Column(
+          return const Column(
             children: [
               YoutubeAdCard(),
               YoutubeVideoCard(

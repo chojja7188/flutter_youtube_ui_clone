@@ -4,7 +4,7 @@ import 'package:flutter_youtube_ui_clone/model/video_category.dart';
 class CategoryCard extends StatefulWidget {
   final VideoCategory category;
   final bool select;
-  const CategoryCard({Key? key, required this.category, this.isSelected, required this.select}) : super(key: key);
+  const CategoryCard({super.key, required this.category, this.isSelected, required this.select});
 
   final void Function(int selectedId)? isSelected;
 
@@ -25,16 +25,16 @@ class _CategoryCardState extends State<CategoryCard> {
         },
         borderRadius: BorderRadius.circular(8),
         child: Container(
-          padding: EdgeInsets.only(left: 10, right: 10),
+          padding: const EdgeInsets.only(left: 10, right: 10),
           decoration: BoxDecoration(
-              color: widget.select ? Color(0xfff1f1f1) : Color(0xff272727),
+              color: widget.select ? const Color(0xfff1f1f1) : const Color(0xff272727),
               borderRadius: BorderRadius.circular(8)
           ),
           height: 30,
           child: Center(
               child: Text(_category.name,
                   style: TextStyle(
-                      color: widget.select ? Color(0xff272727) : Color(0xfff1f1f1)))),
+                      color: widget.select ? const Color(0xff272727) : const Color(0xfff1f1f1)))),
         ),
       ),
     );

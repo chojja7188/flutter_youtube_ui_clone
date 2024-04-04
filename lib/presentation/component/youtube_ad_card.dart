@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_youtube_ui_clone/config.dart';
 
 class YoutubeAdCard extends StatelessWidget {
-  const YoutubeAdCard({Key? key}) : super(key: key);
+  const YoutubeAdCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,17 +11,15 @@ class YoutubeAdCard extends StatelessWidget {
       width: double.infinity,
       child: Column(
         children: [
-          Container(
-            child: Image.network('https://res.cloudinary.com/linkareer/image/fetch/f_auto,q_50/https://api.linkareer.com/attachments/289669',
-              fit: BoxFit.cover,
-            width: double.infinity,
-              height: 300,
-            ),
+          Image.network('https://res.cloudinary.com/linkareer/image/fetch/f_auto,q_50/https://api.linkareer.com/attachments/289669',
+            fit: BoxFit.cover,
+          width: double.infinity,
+            height: 300,
           ),
           Container(
-            color: Color(0xff263e60),
-            child: Padding(
-              padding: const EdgeInsets.only(left: 8, right: 8, top: 4, bottom: 4),
+            color: const Color(0xff263e60),
+            child: const Padding(
+              padding: EdgeInsets.only(left: 8, right: 8, top: 4, bottom: 4),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -31,7 +29,7 @@ class YoutubeAdCard extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 4),
+          const SizedBox(height: 4),
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(8),
@@ -47,8 +45,8 @@ class YoutubeAdCard extends StatelessWidget {
                             height:30,
                             child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoG1ZcPavwVTuM-quTBYcbWF6xemMdOKIgKaL1ybthRw&s'))
                     ),
-                    SizedBox(width: 12),
-                    Column(
+                    const SizedBox(width: 12),
+                    const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text('오름캠프에서 앱 개발 훈련생을 모집합니다!'),
@@ -65,12 +63,12 @@ class YoutubeAdCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                Expanded(child: Spacer()),
-                Icon(Icons.more_vert, color: Config.fontColor, size: 20)
+                const Expanded(child: Spacer()),
+                const Icon(Icons.more_vert, color: Config.fontColor, size: 20)
               ],
             ),
           ),
-          SizedBox(height: 20)
+          const SizedBox(height: 20)
         ],
       ),
     );
