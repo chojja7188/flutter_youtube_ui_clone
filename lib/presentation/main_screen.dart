@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_youtube_ui_clone/config.dart';
 import 'package:flutter_youtube_ui_clone/presentation/component/custom_app_bar.dart';
 import 'package:flutter_youtube_ui_clone/presentation/component/custom_bottom_navigation_bar.dart';
 import 'package:flutter_youtube_ui_clone/presentation/tabs/home_tab.dart';
@@ -16,11 +17,14 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          CustomAppBar(),
-          HomeTab(),
-        ],
+      body: Container(
+        color: Config.bgColor,
+        child: CustomScrollView(
+          slivers: [
+            CustomAppBar(),
+            HomeTab(),
+          ],
+        ),
       ),
       bottomNavigationBar: CustomBottomNavigationBar()
     );

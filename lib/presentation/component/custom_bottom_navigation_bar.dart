@@ -21,7 +21,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           _bottomButton(text: '홈', iconData: Icons.home_filled),
-          _bottomButton(text: 'Shorts', iconData: Icons.video_library_outlined),
+          _bottomButton(text: 'Shorts', iconData: Icons.slow_motion_video_outlined),
           IconButton(
               onPressed: () {},
               icon: Icon(Icons.add_circle_outline_rounded, size: 35, color: Config.fontColor,)
