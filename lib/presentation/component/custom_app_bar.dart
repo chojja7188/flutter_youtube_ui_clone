@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_youtube_ui_clone/component/category_list.dart';
+import 'package:flutter_youtube_ui_clone/presentation/component/category_list.dart';
 import 'package:flutter_youtube_ui_clone/repository/category_repository.dart';
 
 class CustomAppBar extends StatefulWidget {
