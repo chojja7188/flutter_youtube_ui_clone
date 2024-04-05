@@ -3,14 +3,9 @@ import 'package:flutter_youtube_ui_clone/presentation/component/youtube_ad_card.
 import 'package:flutter_youtube_ui_clone/presentation/component/youtube_shorts_list.dart';
 import 'package:flutter_youtube_ui_clone/presentation/component/youtube_video_card.dart';
 
-class HomeTab extends StatefulWidget {
+class HomeTab extends StatelessWidget {
   const HomeTab({Key? key}) : super(key: key);
 
-  @override
-  State<HomeTab> createState() => _HomeTabState();
-}
-
-class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
     return SliverList(

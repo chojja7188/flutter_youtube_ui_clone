@@ -2,14 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_youtube_ui_clone/presentation/component/category_list.dart';
 import 'package:flutter_youtube_ui_clone/repository/category_repository.dart';
 
-class CustomAppBar extends StatefulWidget {
+class CustomAppBar extends StatelessWidget {
   const CustomAppBar({super.key});
 
-  @override
-  State<CustomAppBar> createState() => _CustomAppBarState();
-}
-
-class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
